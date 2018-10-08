@@ -34,7 +34,7 @@ ENV MONGO_DBPATH /data/mongo
 RUN mkdir  && \
 	chmod 777 $SOFTWARE_ROOT/$LEANOTE_DIR/bin/run.sh
 
-EXPORSE 10008	
+EXPOSE 10008	
 
 #copy start bash and chmod
 COPY leanote-start.sh /root/
