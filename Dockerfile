@@ -31,7 +31,7 @@ RUN apt -y update && \
 
 # create mongo dbpath and chmod leanote's run.sh
 ENV MONGO_DBPATH /data/mongo
-RUN mkdir  && \
+RUN mkdir -p $MONGO_DBPATH  && \
 	chmod 777 $SOFTWARE_ROOT/$LEANOTE_DIR/bin/run.sh
 
 EXPOSE 10008	
